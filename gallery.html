@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery</title>
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="uh-preloader-v2" id="uhPreloaderV2">
+  <div class="uh-preloader-inner">
+
+    <div class="uh-road-line"></div>
+
+    <h1 class="uh-preloader-brand">
+      7 <span>Horses</span>
+    </h1>
+
+    <p class="uh-preloader-sub">
+      Premium Cab Services
+    </p>
+
+  </div>
+</div>
+
+
+    <!-- ================= TOP BAR START ================= -->
+<section class="top-bar">
+  <div class="container-fluid">
+    <div class="row align-items-center">
+
+      <!-- CENTER : CONTACT INFO -->
+      <div class="col-lg-10 col-md-12">
+        <div class="contact-center d-flex justify-content-center align-items-center flex-wrap">
+
+          <div class="top-item call">
+            <i class="fa-solid fa-phone"></i>
+            <span>Call</span>
+            <strong>
+              <a href="tel:+919543863532">+91 9543863532</a>
+            </strong>
+          </div>
+
+          <div class="top-item whatsapp">
+            <i class="fa-brands fa-whatsapp"></i>
+            <span>WhatsApp</span>
+            <strong>
+              <a href="https://wa.me/919840033004" target="_blank">
+                +91 9840033004
+              </a>
+            </strong>
+          </div>
+
+          <div class="top-item email">
+            <i class="fa-solid fa-envelope"></i>
+            <a href="mailto:7horsestravels@gmail.com">
+              7horsestravels@gmail.com
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- RIGHT : SOCIAL ICONS -->
+      <div class="col-lg-2 col-md-12 text-lg-end text-center social-icons">
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ================= NAVBAR START ================= -->
+ <nav class="navbar navbar-expand-lg main-navbar">
+  <div class="container">
+
+    <!-- Logo -->
+    <a href="index.html" class="navbar-brand">
+      <img src="images/main.png" width="90" alt="Logo">
+    </a>
+
+    <!-- Mobile Toggle -->
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="offcanvas"
+      data-bs-target="#mobileMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Desktop Menu -->
+    <div class="collapse navbar-collapse justify-content-center d-none d-lg-flex">
+
+      <ul class="navbar-nav align-items-center">
+
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+
+        <!-- Desktop Dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+            Services
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="carrental.html">Car Rental</a></li>
+            <li><a class="dropdown-item" href="vanrental.html">Van Rental</a></li>
+            <li><a class="dropdown-item" href="luxurycar.html">Luxury Car Rental</a></li>
+            <li><a class="dropdown-item" href="busrental.html">Bus Rental</a></li>
+             <li><a class="dropdown-item" target="_blank" href="https://latwisters.in/">Farm House Booking</a></li>
+              <li><a class="dropdown-item" target="_blank" href="https://www.gtourism.in/incredibleindia">Leisure domestic trip</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="packagetours.html">pilgrim Domestic Trip</a></li>
+        <li class="nav-item"><a class="nav-link" href="https://www.gtourism.in/">International Packages</a></li>
+        <li class="nav-item"><a class="nav-link" href="tariff.html">Tariff</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+
+      </ul>
+    </div>
+
+  </div>
+</nav>
+
+<div class="offcanvas offcanvas-start" id="mobileMenu">
+  <div class="offcanvas-header">
+     <img src="images/main.png" width="120px" alt="">
+    <button class="btn-close" data-bs-dismiss="offcanvas"></button>
+  </div>
+
+  <div class="offcanvas-body">
+    <ul class="navbar-nav">
+
+      <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+      <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+
+      <!-- Mobile Collapse Menu -->
+      <li class="nav-item">
+        <a class="nav-link d-flex justify-content-between align-items-center"
+           data-bs-toggle="collapse"
+           href="#mobileServicesMenu">
+          Services
+          <span class="bi bi-chevron-down"></span>
+        </a>
+
+        <div class="collapse ps-3" id="mobileServicesMenu">
+          <ul class="list-unstyled">
+            <li><a class="nav-link" href="carrental.html">Car Rental</a></li>
+            <li><a class="nav-link" href="vanrental.html">Van Rental</a></li>
+            <li><a class="nav-link" href="luxurycar.html">Luxury Car Rental</a></li>
+            <li><a class="nav-link" href="busrental.html">Bus Rental</a></li>
+             <li><a class="nav-link"  target="_blank" href="https://latwisters.in/">Farm House Booking</a></li>
+              <li><a class="nav-link" target="_blank" href="https://www.gtourism.in/incredibleindia">Leisure domestic trip</a></li>
+          </ul>
+        </div>
+      </li>
+
+      <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+      <li class="nav-item"><a class="nav-link" href="packagetours.html">pilgrim Domestic Trip</a></li>
+      <li class="nav-item"><a class="nav-link" href="https://www.gtourism.in/">International Packages</a></li>
+      <li class="nav-item"><a class="nav-link" href="tariff.html">Tariff</a></li>
+      <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+
+    </ul>
+
+    <!-- ===== CONTACT INFO ===== -->
+    <div class="mobile-contact mt-4 pt-3 border-top">
+
+      <h6 class="fw-bold mb-3">Contact Us</h6>
+
+      <p class="mb-2">
+        <i class="bi bi-telephone-fill text-primary me-2"></i>
+        <a href="tel:+919543863532">+91 95438 63532</a>
+      </p>
+
+      <p class="mb-2">
+        <i class="bi bi-whatsapp text-success me-2"></i>
+        <a href="https://wa.me/919840033004" target="_blank">
+          +91 98400 33004
+        </a>
+      </p>
+
+      <p class="mb-0">
+        <i class="bi bi-envelope-fill text-danger me-2"></i>
+        <a href="mailto:7horsestravels@gmail.com">
+          7horsestravels@gmail.com
+        </a>
+      </p>
+
+    </div>
+
+  </div>
+</div>
+
+<section class="uh-banner-wrapper">
+  <div class="uh-banner-overlay">
+    <div class="container">
+      <div class="uh-banner-content text-center">
+
+        <h1 class="uh-banner-title">
+          Gallery
+        </h1>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="gallery-section py-5" style="background-color: white;">
+  <div class="container">
+
+    <!-- HEADER -->
+    <div class="text-center mb-5">
+      <h2 class="gallery-title text-black" >Our Gallery</h2>
+      <p class="gallery-subtitle text-black">
+        Moments from our journeys and happy customers
+      </p>
+    </div>
+
+    <!-- GALLERY GRID -->
+    <div class="row g-4">
+
+      <!-- IMAGE ITEM -->
+
+       <div class="col-lg-4 col-md-6 col-sm-12" data-aos="flip-right">
+        <div class="gallery-item">
+          <img src="images/sedan.jpg" alt="Gallery">
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 col-sm-12" data-aos="flip-right">
+        <div class="gallery-item">
+          <img src="images/abtn.jpg" alt="Gallery">
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 col-sm-12" data-aos="flip-right">
+        <div class="gallery-item">
+          <img src="images/glanza.jpg" alt="Gallery">
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 col-sm-12" data-aos="flip-right">
+        <div class="gallery-item">
+          <img src="images/swift.avif" alt="Gallery">
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 col-sm-12" data-aos="flip-right">
+        <div class="gallery-item">
+          <img src="images/galtwo.jpg" alt="Gallery">
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 col-sm-12" data-aos="flip-right">
+        <div class="gallery-item">
+          <img src="images/galthree.jpg" alt="Gallery">
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 col-sm-12" data-aos="flip-right">
+        <div class="gallery-item">
+          <img src="images/luxbus.jpeg" alt="Gallery">
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 col-sm-12" data-aos="flip-right">
+        <div class="gallery-item">
+          <img src="images/luxone.jpeg" alt="Gallery">
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 col-sm-12" data-aos="flip-right">
+        <div class="gallery-item">
+          <img src="images/minibus.jpeg" alt="Gallery">
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 col-sm-12" data-aos="flip-right">
+        <div class="gallery-item">
+          <img src="images/luxfive.jpeg" alt="Gallery">
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 col-sm-12" data-aos="flip-right">
+        <div class="gallery-item">
+          <img src="images/luxfour.jpeg" alt="Gallery">
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 col-sm-12" data-aos="flip-right">
+        <div class="gallery-item">
+          <img src="images/luxsix.jpeg" alt="Gallery">
+        </div>
+      </div>
+      
+
+      <div class="col-lg-4 col-md-6 col-sm-12" data-aos="flip-right">
+        <div class="gallery-item">
+          <img src="images/gallone.jpeg" alt="Gallery">
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 col-sm-12" data-aos="flip-right">
+        <div class="gallery-item">
+          <img src="images/galtwo.jpeg" alt="Gallery">
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 col-sm-12" data-aos="flip-right">
+        <div class="gallery-item">
+          <img src="images/gallthree.jpeg" alt="Gallery">
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 col-sm-12" data-aos="flip-right">
+        <div class="gallery-item">
+          <img src="images/gallfour.jpeg" alt="Gallery">
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 col-sm-12" data-aos="flip-right">
+        <div class="gallery-item">
+          <img src="images/gallfive.jpeg" alt="Gallery">
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 col-sm-12" data-aos="flip-right">
+        <div class="gallery-item">
+          <img src="images/bu.jpeg" alt="Gallery">
+        </div>
+      </div>
+
+
+      <div class="col-lg-4 col-md-6 col-sm-12" data-aos="flip-right">
+        <div class="gallery-item">
+          <img src="images/vanone.jpeg" alt="Gallery">
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 col-sm-12" data-aos="flip-right">
+        <div class="gallery-item">
+          <img src="images/vantwo.jpeg" alt="Gallery">
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 col-sm-12" data-aos="flip-right">
+        <div class="gallery-item">
+          <img src="images/vanthree.jpeg" alt="Gallery">
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 col-sm-12" data-aos="flip-right">
+        <div class="gallery-item">
+          <img src="images/vanthree.jpeg" alt="Gallery">
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 col-sm-12" data-aos="flip-right">
+        <div class="gallery-item">
+          <img src="images/vanfour.jpeg" alt="Gallery">
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 col-sm-12" data-aos="flip-right">
+        <div class="gallery-item">
+          <img src="images/vanfive.jpeg" alt="Gallery">
+        </div>
+      </div>
+
+
+      <div class="col-lg-4 col-md-6 col-sm-12" data-aos="flip-right">
+        <div class="gallery-item">
+          <img src="images/minibus.jpeg" alt="Gallery">
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 col-sm-12" data-aos="flip-right">
+        <div class="gallery-item">
+          <img src="images/bu.jpeg" alt="Gallery">
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 col-sm-12" data-aos="flip-right">
+        <div class="gallery-item">
+          <img src="images/foutyfour.jpeg" alt="Gallery">
+        </div>
+      </div>
+
+
+
+      <div class="col-lg-4 col-md-6 col-sm-12" data-aos="flip-right">
+        <div class="gallery-item">
+          <img src="images/foutyone.jpeg" alt="Gallery">
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 col-sm-12" data-aos="flip-right">
+        <div class="gallery-item">
+          <img src="images/foutytwo.jpeg" alt="Gallery">
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 col-sm-12" data-aos="flip-right">
+        <div class="gallery-item">
+          <img src="images/foutythree.jpeg" alt="Gallery">
+        </div>
+      </div>
+
+     
+
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="row gy-4">
+
+      <!-- LOGO & ABOUT -->
+      <div class="col-lg-4 col-md-6">
+        <div class="footer-brand">
+          <img src="images/main.png" width="120px" alt="7Horses Logo">
+          <p>
+            7Horses Cab Services provides safe, reliable and comfortable cab
+            services for airport transfers, corporate travel, outstation
+            journeys and local city rides.
+          </p>
+
+          <!-- SOCIAL ICONS -->
+          <div class="footer-social">
+            <a href="https://www.facebook.com/share/18HyXe6Qe2/"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/sevenhorsestoursandtravels?igsh=MTBjcm4yaTdkNXIwbw=="><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-twitter"></i></a>
+            <a href="#"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- QUICK LINKS -->
+      <div class="col-lg-2 col-md-6">
+        <h5 class="footer-title">Quick Links</h5>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="service.html">Services</a></li>
+          <li><a href="https://www.gtourism.in/">International Packages</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- SERVICES -->
+      <div class="col-lg-3 col-md-6">
+        <h5 class="footer-title">Our Services</h5>
+        <ul class="footer-links">
+          <li><a href="carrental.html">Car Rental</a></li>
+          <li><a href="vanrental.html">Van Rental</a></li>
+          <li><a href="busrental.html">Bus Rental</a></li>
+          <li><a href="luxurycar.html">Luxury Car Rental</a></li>
+        </ul>
+      </div>
+
+      <!-- CONTACT INFO -->
+      <div class="col-lg-3 col-md-6">
+        <h5 class="footer-title">Contact Us</h5>
+        <ul class="footer-contact">
+          <li>
+            <i class="bi bi-geo-alt"></i>
+            <span>
+              No 13 A/209, Ground Floor, Kaashyab Enclave, Velachery Main Road, Near Guru Nanak College, Velachery, Chennai – 600042.
+            </span>
+          </li>
+          <li>
+            <i class="bi bi-telephone"></i>
+            <a href="tel:+919822979797">+91 9543863532</a>
+          </li>
+          <li>
+            <i class="bi bi-telephone"></i>
+            <a href="tel:++914446390762">+91 4446390762</a>
+          </li>
+          <li>
+            <i class="bi bi-envelope"></i>
+            <a href="mailto:info@7horsescab.com">7horsestravels@gmail.com</a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- COPYRIGHT -->
+  <div class="footer-bottom">
+    <div class="container text-center">
+      <p>
+        © 2026 <strong>7Horses Cab Services</strong>. All Rights Reserved. Designed By <a href="https://www.techmayon.com/" style="text-decoration: none;color: white;">Tech Mayon</a>
+      </p>
+    </div>
+  </div>
+</footer>
+<!-- FLOATING ACTION BUTTONS -->
+<!-- FLOATING ACTION BUTTONS -->
+<div class="uh-float-actions">
+
+  <!-- PHONE CALL -->
+  <a
+    href="tel:+919543863532"
+    class="uh-phone-btn"
+    aria-label="Call Us"
+  >
+    <i class="bi bi-telephone-fill"></i>
+  </a>
+
+  <!-- WHATSAPP -->
+  <a
+    href="https://wa.me/919543863532?text=Hello%2C%20I%20would%20like%20to%20book%20a%20cab"
+    target="_blank"
+    class="uh-whatsapp-btn"
+    aria-label="Chat on WhatsApp"
+  >
+    <i class="bi bi-whatsapp"></i>
+  </a>
+
+  <!-- SCROLL TO TOP -->
+  <button
+    class="uh-scrolltop-btn"
+    id="uhScrollTopBtn"
+    aria-label="Scroll to top"
+  >
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+</div>
+
+
+<script>
+  const scrollBtn = document.getElementById("uhScrollTopBtn");
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 300) {
+      scrollBtn.classList.add("show");
+    } else {
+      scrollBtn.classList.remove("show");
+    }
+  });
+
+  scrollBtn.addEventListener("click", () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  });
+</script>
+
+<script>
+  window.addEventListener("load", () => {
+    const preloader = document.getElementById("uhPreloaderV2");
+    preloader.classList.add("hide");
+  });
+</script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+</body>
+</html>
